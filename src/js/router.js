@@ -1,18 +1,24 @@
 import observer from './observer';
 
+import getNotFoundPage from '../pages/404';
+import getHomePage from '../pages/home';
+import getIstqbPage from '../pages/istqbGame';
+import getAboutPage from '../pages/about';
+import getEndPage from '../pages/end';
+
 const routes = {
-    404: import('../pages/404'),
-    '/': import('../pages/home'),
-    '/game': import('../pages/istqbGame'),
-    '/united24': import('../pages/about'),
-    '/end': import('../pages/end'),
+    404: getNotFoundPage,
+    '/': getHomePage,
+    '/game': getIstqbPage,
+    '/united24': getAboutPage,
+    '/end': getEndPage,
 };
 
 const handleLocation = () => {
     const path = window.location.pathname;
     const page = routes[path] || routes[404];
     if (typeof page === 'function') {
-        page().render();
+        page(observer).render();
         return;
     }
     page.then(page => page.default(observer).render());
