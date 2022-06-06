@@ -1,10 +1,8 @@
 import observer from './observer';
 
-import getHomePage from '../pages/home';
-
 const routes = {
     404: import('../pages/404'),
-    '/': getHomePage,
+    '/': import('../pages/home'),
     '/game': import('../pages/istqbGame'),
     '/united24': import('../pages/about'),
     '/end': import('../pages/end'),

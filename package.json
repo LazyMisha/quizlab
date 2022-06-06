@@ -9,7 +9,8 @@
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "start": "webpack serve --mode development",
-    "predeploy": "npm run build",
+    "gh-build": "webpack --mode production --output-public-path /quizlab",
+    "predeploy": "npm run gh-build",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [
