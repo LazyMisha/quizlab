@@ -1,12 +1,16 @@
 {
+  "homepage": "https://lazymisha.github.io/quizlab/",
   "name": "quizlab",
   "version": "1.0.0",
   "description": "quizlab",
   "main": "index.js",
   "scripts": {
+    "watch": "live-server dist",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack serve --mode development"
+    "start": "webpack serve --mode development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "quizlab"
@@ -20,6 +24,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.1",
     "eslint": "^8.17.0",
+    "gh-pages": "^4.0.0",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "sass": "^1.52.1",
