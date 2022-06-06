@@ -1,0 +1,90 @@
+#quiz {
+    height: 100%;
+}
+
+.title-wrapper {
+    width: 90%;
+    text-align: center;
+    z-index: 1;
+    margin: 10px;
+}
+
+.select-number-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 50%;
+    width: 90%;
+    padding: 10px;
+}
+
+.select-number-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 30%;
+    flex-grow: 1;
+    position: relative;
+    height: 30%;
+    margin: 5px;
+    text-align: center;
+    background: #4E5180;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    box-shadow: 5px 5px 15px #3B3E79;
+    max-width: 60px;
+}
+
+.select-number-card:hover {
+    background: #3B3E79;
+}
+
+.mark-sign {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: #28a745;
+    font-weight: bolder;
+}
+
+#start-game-button {
+    align-items: center;
+    background-color: #4E5180;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    font-size: 14px;
+    padding: 13px 24px;
+    cursor: pointer;
+    color: white;
+    z-index: 1;
+    margin: 10px;
+}
+
+#start-game-button:hover {
+    background: #3B3E79;
+}
+
+#canvas {
+    opacity: 0.1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/*big screen*/
+@media (min-width: 800px) {
+    .title-wrapper {
+        font-size: 2vmax;
+    }
+
+    #start-game-button {
+        font-size: 20px;
+    }
+
+    .select-number-card {
+        font-size: 25px;
+    }
+}

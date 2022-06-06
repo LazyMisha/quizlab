@@ -1,0 +1,52 @@
+#about-page {
+    font-size: 13px;
+}
+
+#info-text {
+    width: 90%;
+    padding: 10px;
+}
+
+#united24-about-text {
+    width: 90%;
+    padding: 10px;
+}
+
+#united24-about-text > p {
+    margin: 5px;
+}
+
+#united24-about-text > ul {
+    padding-left: 20px;
+}
+
+#united24-about-text > hr {
+    border: 0;
+    border-bottom: 1px solid #888;
+}
+
+#united24-button-container {
+    cursor: pointer;
+    margin: 10px;
+    padding: 0 15px 15px 15px;
+}
+
+#united24-button {
+    width: 200px;
+}
+
+/* big screen */
+@media (min-width: 800px) {
+    #info-text {
+        width: 70%;
+        padding: 50px;
+    }
+
+    #united24-about-text {
+        width: 70%;
+    }
+
+    #about-page {
+        font-size: 16px;
+    }
+}
