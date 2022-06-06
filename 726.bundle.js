@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkquizlab=self.webpackChunkquizlab||[]).push([[726],{726:(e,p,s)=>{e.exports=s.p+"8f8a68f4180742d6ded8.png"}}]);
