@@ -1,7 +1,3 @@
-.results-title {
-    font-size: 16px;
-}
-
 #scores {
     text-align: center;
 }
@@ -29,8 +25,14 @@
     font-size: 15px;
 }
 
+.result-questions-container > p {
+    padding: 0 15px;
+    margin: 0;
+}
+
 #questions {
     padding: 0 20px;
+    margin: 0;
 }
 
 #questions > li {
@@ -47,9 +49,6 @@
 
 /*big screen*/
 @media (min-width: 800px) {
-    .results-title {
-        font-size: 16px;
-    }
 
     #go-home-btn {
         font-size: 18px;

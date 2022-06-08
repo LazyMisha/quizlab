@@ -18,12 +18,13 @@ class EndPage {
 
         if (this.answers.length) {
             const percentage = this.score / this.answers.length * 100;
-            this.scores.innerText = `Correct answers: ${this.score} out of ${this.answers.length} (${percentage}%)`;
+            const passMark = percentage >= 65 ? '\u2705' : '\u274C';
+            this.scores.innerText = `Correct answers: ${this.score} out of ${this.answers.length} (${percentage}%) - ${passMark}`;
         }
 
         this.questionsList.innerHTML = this.answers.map((answer) => {
-            const [question, isAnswerCorrect] = answer;
-            return `<li class="${isAnswerCorrect ? 'passed' : 'failed'}">${question}</li>`;
+            const [question, isAnswerCorrect, LO] = answer;
+            return `<li class="${isAnswerCorrect ? 'passed' : 'failed'}">${question} - ${LO}</li>`;
         }).join('');
 
         this.goHomeBtn.addEventListener('click', () => {

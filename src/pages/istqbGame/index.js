@@ -45,7 +45,7 @@ class IstqbGamePage {
         const prevAnswers = JSON.parse(localStorage.getItem('answers')) || [];
         localStorage.setItem('answers', JSON.stringify([
             ...prevAnswers,
-            [this.selectedChoice.parentElement.firstElementChild.textContent, isAnswerCorrect]
+            [this.selectedChoice.parentElement.firstElementChild.textContent, isAnswerCorrect, this.currentQuestion.LO]
         ]));
 
         if (isAnswerCorrect) {

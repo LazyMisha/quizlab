@@ -11,7 +11,8 @@
       "2": "Is correct. From glossary",
       "3": "Is not correct. Definition of functionality suitability according to glossary",
       "4": "Is not correct. Like Definition of Decision table testing according to glossary"
-    }
+    },
+    "LO": "What is Testing?"
   },
   {
     "question": "Which of the following statements is a valid objective for testing?",
@@ -25,7 +26,8 @@
       "2": "Is correct. This is one objective of testing",
       "3": "Is not correct. Principle #2 states that exhaustive testing is impossible, so one can never prove that all defects were identified",
       "4": "Is not correct. To make an assessment whether a defect will cause a failure or not, one must detect the defect first. Saying that no remaining defect will cause a failure implicitly means that all defects were found. This again contradicts principle #2"
-    }
+    },
+    "LO": "Identify typical objectives of testing"
   },
   {
     "question": "Which of the following statements correctly describes the difference between testing and debugging?",
@@ -39,7 +41,8 @@
       "2": "Is correct. Dynamic testing can show failures that are caused by defects in the software. Debugging eliminates the defects, which are the source of failures",
       "3": "Is not correct. Testing does not remove faults, but debugging removes faults, which is synonyms for defects, that may cause the failures",
       "4": "Is not correct. Dynamic testing does not directly prevent the causes of failures (defects) but detects the presence of defects"
-    }
+    },
+    "LO": "Differentiate testing from debugging"
   },
   {
     "question": "Which one of the statements below describes the most common situation for a failure discovered during testing or in production?",
@@ -53,7 +56,8 @@
       "2": "Is not correct. This is a defect, not a failure since there is something wrong in the code. It may not result in a visible or noticeable failure, for example if the changes in the source code file are only in comments",
       "3": "Is not correct. The use of wrong input variables may not result in a visible or noticeable failure, for example if nobody uses this particular algorithm; or if the wrong input variable has a similar value to the correct input variable; or if the FALSE result of the algorithm is not used",
       "4": "Is not correct. This type of fault will not necessarily lead to a failure; for example, if no one uses this special algorithm"
-    }
+    },
+    "LO": "Distinguish between error, defect, and failure"
   },
   {
     "question": "Mr. Test has been testing software applications on mobile devices for a period of 5 years. He has a wealth of experience in testing mobile applications and achieves better results in a shorter time than others. Over several months, Mr. Test did not modify the existing automated test cases and did not create any new test cases. This leads to fewer and fewer defects being found by executing the tests. What principle of testing did Mr. Test not observe?",
@@ -67,7 +71,8 @@
       "2": "Is not correct. Exhaustive testing is impossible, regardless of the amount of effort put into testing (principle #2)",
       "3": "Is correct. Principle #5 says “If the same tests are repeated over and over again, eventually these tests no longer find any new defects. To detect new defects, existing tests and test data may need changing, and new tests may need to be written.” Automated regression testing of the same test cases will not bring new findings",
       "4": "Is not correct. ”Defect cluster together” (principle #4). A small number of modules usually contain most of the defects, but this does not mean that fewer and fewer defects will be found"
-    }
+    },
+    "LO": "Explain the seven testing principles"
   },
   {
     "question": "In what way can testing be part of Quality Assurance?",
@@ -81,7 +86,8 @@
       "2": "Is correct. Testing contributes to the achievement of quality in a variety of ways, e.g., such as reducing the risk of inadequate software quality",
       "3": "Is not correct. This is quality assurance but not testing",
       "4": "Is not correct. The quality cannot be measured by counting the number of executed test cases without knowing the outcome"
-    }
+    },
+    "LO": "Describe the relationship between testing and quality assurance and give examples of how testing contributes to higher quality"
   },
   {
     "question": "Which of the following activities is part of the main activity \"test analysis\" in the test process?",
@@ -95,7 +101,8 @@
       "2": "Is not correct. This activity is performed during the test implementation activity (test implementation)",
       "3": "Is not correct. This activity is performed during the test completion activity (test completion)",
       "4": "Is correct. This activity is performed during the test analysis activity (test analysis)"
-    }
+    },
+    "LO": "Describe the test activities and respective tasks within the test process"
   },
   {
     "question": "Match the following test work products (1-4) with the right description (A-D).",
@@ -110,7 +117,8 @@
       "3": "Glossary defines the following tests as:\n• Test suite: “A set of test scripts or test procedures to be executed in\na specific test run.” (1A)\n• Test case: “A set of preconditions, inputs, actions (where\napplicable), expected results and post conditions, developed based\non test conditions” (2C)\n• Test script: “A sequence of instructions for the execution of a test”\n(3B)\n• Test charter: “Documentation of test activities in session-based\nexploratory testing” (4D)",
       "4": "Glossary defines the following tests as:\n• Test suite: “A set of test scripts or test procedures to be executed in\na specific test run.” (1A)\n• Test case: “A set of preconditions, inputs, actions (where\napplicable), expected results and post conditions, developed based\non test conditions” (2C)\n• Test script: “A sequence of instructions for the execution of a test”\n(3B)\n• Test charter: “Documentation of test activities in session-based\nexploratory testing” (4D)"
     },
-    "image": "question8"
+    "image": "question8",
+    "LO": "Differentiate the work products that support the test process"
   },
   {
     "question": "How can white-box testing be applied during user acceptance testing?",
@@ -124,7 +132,8 @@
       "2": "Is not correct. Relevant for component testing",
       "3": "Is correct. For acceptance testing, tests are designed to cover all workflows defined in the functional requirements documents",
       "4": "Is not correct. Relevant for system testing"
-    }
+    },
+    "LO": "Recognize that functional, non-functional, and white-box tests occur at any test level"
   },
   {
     "question": "Which of the following statements comparing component testing and system testing is TRUE?",
@@ -138,7 +147,8 @@
       "2": "Is correct. Examples of work products that can be used as a test basis for component testing include detailed design, code, data model, component specifications. Examples of work products for system testing include system and software requirement specifications (functional and non-functional) use cases",
       "3": "Is not correct. Component testing does not ONLY focus on functional characteristics",
       "4": "Is not correct. Component tests are also executed by developers, whereas system testing typically is the responsibility of (independent) testers"
-    }
+    },
+    "LO": "Compare the different test levels from the perspective of objectives, test basis, test objects, typical defects and failures, and approaches and responsibilities"
   },
   {
     "question": "Which one of the following is TRUE?",
@@ -152,7 +162,8 @@
       "2": "Is not correct. The statement about confirmation testing should be about regression testing",
       "3": "Is correct. See reasons from incorrect answers",
       "4": "Is not correct. Testing new functionality is not regression testing"
-    }
+    },
+    "LO": "Compare the purposes of confirmation testing and regression testing"
   },
   {
     "question": "Which one of the following is the BEST definition of an incremental development model?",
@@ -166,7 +177,8 @@
       "2": "Is not correct. This is a sequential model",
       "3": "Is not correct. This describes the waterfall model",
       "4": "Is not correct. Testing alone is not an increment/additional step in the development"
-    }
+    },
+    "LO": "Explain the relationships between software development activities and test activities in the software development lifecycle"
   },
   {
     "question": "Which of the following should NOT be a trigger for maintenance testing?",
@@ -180,7 +192,8 @@
       "2": "Is not correct. This is a trigger for maintenance testing: Operational tests of the new environment as well as of the changed software",
       "3": "Is not correct. This is the trigger for maintenance testing: testing restore/retrieve procedures after archiving for long retention periods",
       "4": "Is not correct. This is the trigger for maintenance testing: Reactive modification of a delivered software product to correct emergency defects that have caused actual failures"
-    }
+    },
+    "LO": "Summarize triggers for maintenance testing"
   },
   {
     "question": "Which of the following options are roles in a formal review?",
@@ -194,7 +207,8 @@
       "2": "Is not correct. Developer is NOT a role in a formal review",
       "3": "Is not correct. Designer is NOT a role in a formal review",
       "4": "Is correct. See reasons from incorrect answers"
-    }
+    },
+    "LO": "Recognize the different roles and responsibilities in a formal review"
   },
   {
     "question": "Which activities are carried out within the planning of a formal review?",
@@ -208,7 +222,8 @@
       "2": "Is not correct. \"Answer any question.\" belongs to the main activity \"Initiate Review\"",
       "3": "Is correct. The checking of entry criteria takes place in the planning of a formal review",
       "4": "Is not correct. The evaluation of the review findings against the exit criteria belongs to the main activity \"Issue communication and analysis\""
-    }
+    },
+    "LO": "Summarize the activities of the work product review process"
   },
   {
     "question": "Which of the review types below is the BEST option to choose when the review must follow a formal process based on rules and checklists?",
@@ -222,7 +237,8 @@
       "2": "Is not correct. Use of checklists are optional",
       "3": "Is correct. Inspection is a formal process based on rules and checklists",
       "4": "Is not correct. Does not explicitly require a formal process and the use of checklists is optional"
-    }
+    },
+    "LO": "Explain the differences between different review types: informal review, walkthrough, technical review, and inspection"
   },
   {
     "question": "Which of the following statements about static testing are MOST true?",
@@ -236,7 +252,8 @@
       "2": "Is not correct. Dynamic testing still has its challenging because they find other types of defects",
       "3": "Is not correct. This is dynamic testing",
       "4": "Is not correct. Static testing is important for safety-critical computer systems"
-    }
+    },
+    "LO": "Use examples to describe the value of static testing"
   },
   {
     "question": "You will be invited to a review. The work product to be reviewed is a description of the in-house document creation process. The aim of the description is to present the work distribution between the different roles involved in the process in a way that can be clearly understood by everyone. \n\nYou will be invited to a checklist-based review. The checklist will also be sent to you. It includes the following points:\n\n i. Is the person who performs the activity clearly identified for each activity?\n\nii. Are the entry criteria clearly defined for each activity?\n\niii. Are the exit criteria clearly defined for each activity?\n\niv. Are the supporting roles and their scope of work clearly defined for each activity?\n\nIn the following we show an excerpt of the work result to be reviewed, for which you should use the\nchecklist above:\n\n\"After checking the customer documentation for completeness and correctness, the software\narchitect creates the system specification. Once the software architect has completed the system\nspecification, he invites testers and verifiers to the review. A checklist describes the scope of the\nreview. Each invited reviewer creates review comments - if necessary - and concludes the review\nwith an official review done-comment.\"\n\nWhich of the following statements about your review is correct?\n",
@@ -250,7 +267,8 @@
       "2": "Is not correct. \"Checklist-based\", last sentence it is documented that you should also look for defects outside the checklist",
       "3": "Is not correct. It is described: every reviewer did his review done comment",
       "4": "Is correct. It is described that a checklist is available, but who provides the checklist?"
-    }
+    },
+    "LO": "Apply a review technique to a work product to find defects"
   },
   {
     "question": "What is checklist-based testing?",
@@ -264,7 +282,8 @@
       "2": "Is not correct. This is black-box test technique",
       "3": "Is correct. See reasons from incorrect answers",
       "4": "Is not correct. This is exploratory testing"
-    }
+    },
+    "LO": "Test Techniques"
   },
   {
     "question": "Which one of the following options is categorized as a black-box test technique?",
@@ -278,7 +297,8 @@
       "2": "Is not correct. This is a white-box test technique",
       "3": "Is not correct. This is an experience-based test technique",
       "4": "Is correct. Black-box test techniques are based on an analysis of the appropriate test basis (e.g., formal requirements documents, specifications, use cases, user stories)"
-    }
+    },
+    "LO": "Explain the characteristics, commonalities, and differences between black-box test techniques, white-box test techniques, and experience-based test techniques"
   },
   {
     "question": "The following statement refers to decision coverage:\n\n\"When the code contains only a single `if` statement and no loops or CASE statements, and its execution is not nested within the test, any single test case we run will result in 50% decision coverage.\"\n\nWhich of the following statement is correct?",
@@ -292,7 +312,8 @@
       "2": "Is correct. Since any test case will cause the outcome of the \"if\" statement to be either TRUE or FALSE, by definition we achieved 50% decision coverage",
       "3": "Is not correct. A single test case can give more than 25% decision coverage, this means according to the statement above always 50% decision coverage",
       "4": "Is not correct. The statement is specific and always true, because each test case achieves 50 % decision coverage"
-    }
+    },
+    "LO": "Explain decision coverage"
   },
   {
     "question": "Which one of the following is the description of statement coverage?",
@@ -306,7 +327,8 @@
       "2": "Is correct. Statement testing exercises the executable statements in the code. Statement coverage is measured as the number of statements executed by the tests divided by the total number of executable statements in the test object, normally expressed as a percentage",
       "3": "Is not correct. The coverage does not measure pass/fail",
       "4": "Is not correct. It is a metric and does not provide true/false statements"
-    }
+    },
+    "LO": "Explain statement coverage"
   },
   {
     "question": "Which statement about the relationship between statement coverage and decision coverage is true?",
@@ -320,7 +342,8 @@
       "2": "Is not correct. The statement is false because achieving 100% statement coverage does not in any case mean that the decision coverage is 100%",
       "3": "Is not correct. The statement is false because we can only do statements about 100% values",
       "4": "Is not correct. The statement is false"
-    }
+    },
+    "LO": "Explain the value of statement and decision coverage"
   },
   {
     "question": "For which of the following situations is exploratory testing suitable?",
@@ -334,7 +357,8 @@
       "2": "Is not correct. The absence of a test charter, which may have been derived from the test analysis, is a poor precondition for the use of exploratory testing",
       "3": "Is correct. Exploratory tests should be performed by experienced testers with knowledge of similar applications and technologies",
       "4": "Is not correct. Explorative testing alone is not suitable to provide evidence that the test was very intensive, instead the evidence is provided in combination with other test methods"
-    }
+    },
+    "LO": "Explain exploratory testing"
   },
   {
     "question": "An employee’s bonus is to be calculated. It cannot be negative, but it can be calculated down to zero. The bonus is based on the length of employment:\n\n• Less than or equal to 2 years\n• More than 2 years but less than 5 years\n• 5 to 10 years inclusively\n• Longer than 10 years\n\nWhat is the minimum number of test cases required to cover all valid equivalence partitions for calculating the bonus?",
@@ -348,7 +372,8 @@
       "2": "Is not correct. One too much (see the four correct partitions in the correct answer)",
       "3": "Is not correct. Two too few (see the four correct partitions in the correct answer)",
       "4": "Is correct. The 4 equivalence partitions correspond to the description in the question, i.e., at least one test case must be created for each equivalence partition:\n\n1. Equivalence partition: 0 ≤ employment time ≤ 2\n2. Equivalence partition: 2 < employment time < 5\n3. Equivalence partition: 5 ≤ employment time ≤ 10\n4. Equivalence partition: 10 < employment time"
-    }
+    },
+    "LO": "Apply equivalence partitioning to derive test cases from given requirements"
   },
   {
     "question": "A speed control and reporting system has the following characteristics:\n\n• If you drive 50 km/h or less, nothing will happen.\n• If you drive faster than 50 km/h, but no more than 55 km/h, you will be warned.\n• If you drive faster than 55 km/h but not more than 60 km/h, you will be fined.\n• If you drive faster than 60 km/h, your driving license will be suspended.\n• The speed in km/h is available to the system as an integer value.\n\nWhich would be the most likely set of values (km/h) identified by applying the boundary value analysis, where only the values on the boundaries of the equivalence classes are selected?",
@@ -362,7 +387,8 @@
       "2": "Is not correct. Does not include all necessary boundary values. 51 and 55 are missing.\n\nThe following partitions can be identified:\n\n1. <= 50, boundary value 50\n2. 51 – 55 boundary values 51, 55\n3. 56 – 60 boundary values 56, 60\n4. >=61 boundary value 61\nBoundary value according to glossary V.3.2: A minimum or maximum value of an ordered equivalence partition.",
       "3": "Is not correct. Does not include necessary boundary values but it includes additional values: 49, 62, and 54, which are not boundary values in this equivalence partition.\n\nThe following partitions can be identified:\n\n1. <= 50, boundary value 50\n2. 51 – 55 boundary values 51, 55\n3. 56 – 60 boundary values 56, 60\n4. >=61 boundary value 61\nBoundary value according to glossary V.3.2: A minimum or maximum value of an ordered equivalence partition.",
       "4": "Is correct. includes all necessary boundary values"
-    }
+    },
+    "LO": "Apply boundary value analysis to derive test cases from given requirements"
   },
   {
     "question": "A company's employees are paid bonuses if they work more than a year in the company and achieve a target which is individually agreed before.\n\nWhich of the following test cases represents a situation that can happen in real life, and is missing in the below decision table?",
@@ -377,7 +403,8 @@
       "3": "Is not correct. There was no agreement on targets, it is impossible to reach the targets. Since this situation can´t occur, this is not a scenario happening in reality",
       "4": "Is correct. The test case describes the situation that the too short period of employment and the non-fulfilment of the agreed target leads to nonpayment of the bonus. This situation can occur in practice but is missing in the decision table"
     },
-    "image": "question27"
+    "image": "question27",
+    "LO": "Apply decision table testing to derive test cases from given requirements"
   },
   {
     "question": "Which of the following statements about the given state transition diagram and table of test cases is TRUE?",
@@ -392,7 +419,8 @@
       "3": "Is not correct. Because all valid transitions are covered",
       "4": "Is not correct. Because the test cases do not have pairs of transitions specified"
     },
-    "image": "question28"
+    "image": "question28",
+    "LO": "Apply state transition testing to derive test cases from given requirements"
   },
   {
     "question": "A video application has the following requirement: The application shall allow playing a video on the following display resolution:\n\n1. 640x480\n2. 1280x720\n3. 1600x1200\n4. 1920x1080\n\nWhich of the following list of test cases is a result of applying the equivalence partitioning test technique to test this requirement?",
@@ -406,7 +434,8 @@
       "2": "Is not correct. Each enumeration value is an equivalence class by itself; therefore, each will be tested when using equivalence partitioning test technique.",
       "3": "Is correct. This is a case where the requirement gives an enumeration of discrete values. Each enumeration value is an equivalence class by itself; therefore, each will be tested when using equivalence partitioning test technique",
       "4": "Is not correct. Each enumeration value is an equivalence class by itself; therefore, each will be tested when using equivalence partitioning test technique."
-    }
+    },
+    "LO": "Apply equivalence partitioning to derive test cases from given requirements"
   },
   {
     "question": "Which of the following statements BEST describes how tasks are divided between the test manager and the tester?",
@@ -420,7 +449,8 @@
       "2": "Is correct",
       "3": "Is not correct. The tester does not decide on the release of the test object",
       "4": "Is not correct. The tester specifies the test cases, the test manager does the prioritization"
-    }
+    },
+    "LO": "Identify the tasks of a test manager and tester"
   },
   {
     "question": "Which of the following metrics would be MOST useful to monitor during test execution?",
@@ -434,7 +464,8 @@
       "2": "Is not correct. This metric can be measured, but its value is low. The number of testers does not give any information about the quality of the test object or test progress",
       "3": "Is not correct. the coverage of requirements by source code is not measured during test execution. At most, the TEST(!) coverage of the code or requirements is measured",
       "4": "Is not correct. This metric is part of test preparation and not test execution"
-    }
+    },
+    "LO": "Recall metrics used for testing"
   },
   {
     "question": "Which of the following can affect and be part of the (initial) test planning?",
@@ -448,7 +479,8 @@
       "2": "Is not correct. Test monitoring and control",
       "3": "Is not correct. Common test metrics",
       "4": "Is not correct. It is a part of test analysis"
-    }
+    },
+    "LO": "Summarize the purpose and content of a test plan"
   },
   {
     "question": "Which of the following lists contains only typical exit criteria from testing?",
@@ -462,7 +494,8 @@
       "2": "Is not correct. The \"degree of tester’s independence\" does not play a role in exit criteria",
       "3": "Is not correct. \"Availability of test environment\" is an entry criterion",
       "4": "Is not correct. \"The Qualification of Tester\" is not a typical exit criterion"
-    }
+    },
+    "LO": "Give examples of potential entry and exit criteria"
   },
   {
     "question": "Which one of the following is NOT included in a test summary report?",
@@ -476,7 +509,8 @@
       "2": "Is not correct. This information is included in a test report: information on what occurred during a test period",
       "3": "Is not correct. This information is included in a test report:\n\n• Status of testing and product quality with respect to the exit criteria or definition of done\n• Metrics of defects, test cases, test coverage, activity progress, and resource consumption",
       "4": "Is not correct. This information is included in a test report: Information and metrics to support recommendations and decisions about future actions, such as an assessment of defects remaining, the economic benefit of continued testing, outstanding risks, and the level of confidence in the tested software"
-    }
+    },
+    "LO": "Summarize the purposes, contents, and audiences for test reports"
   },
   {
     "question": "The project develops a \"smart\" heating thermostat. The control algorithms of the thermostat were modeled as Matlab/Simulink models and run on the internet connected server. The thermostat uses the specifications of the server to trigger the heating valves.\n\nThe test manager has defined the following test strategy/approach in the test plan:\n\n1. The acceptance test for the whole system is executed as an experience-based test.\n2. The control algorithms on the server are checked against standard of the energy saving regulation.\n3. The functional test of the thermostat is performed as risk-based testing.\n4. The security tests of data / communication via the internet are executed together with external security experts.\n\nWhat four common types of test strategies/approaches did the test manager implement in the test plan?",
@@ -490,7 +524,8 @@
       "2": "Is correct.",
       "3": "Is not correct. The possible mappings of points 1 to 4 can be justified as follows:\n\n1. Approach 3 is analytical: Risk-based testing is an example of an analytical approach, where tests are designed and prioritized based on the level of risk\n2. Approach 2 is standard-compliant: The control algorithms is checked against industry-specific standard of the energy saving regulation.\n3. Approach 4 is consultative: This type of test strategy is driven primarily by the advice, guidance, or instructions of stakeholders, business domain experts, or technology experts, who may be outside the test team or outside the organization itself\n4. Approach 1 is reactive: Exploratory testing is a common technique employed in reactive strategies, whereby the explorative testing is assigned to the experience-based testing category.",
       "4": "Is not correct. The possible mappings of points 1 to 4 can be justified as follows:\n\n1. Approach 3 is analytical: Risk-based testing is an example of an analytical approach, where tests are designed and prioritized based on the level of risk\n2. Approach 2 is standard-compliant: The control algorithms is checked against industry-specific standard of the energy saving regulation.\n3. Approach 4 is consultative: This type of test strategy is driven primarily by the advice, guidance, or instructions of stakeholders, business domain experts, or technology experts, who may be outside the test team or outside the organization itself\n4. Approach 1 is reactive: Exploratory testing is a common technique employed in reactive strategies, whereby the explorative testing is assigned to the experience-based testing category."
-    }
+    },
+    "LO": "Differentiate between various test strategies"
   },
   {
     "question": "Which one of the following is the characteristic of a metrics-based approach for test estimation?",
@@ -504,7 +539,8 @@
       "2": "Is not correct. This is expert-based approach: estimating the tasks based on estimates made by the owners of the tasks or by experts",
       "3": "Is not correct. This is expert-based approach: estimating the tasks based on estimates made by the responsible team of the tasks or by experts",
       "4": "Is not correct. This is expert-based approach: estimating the tasks based on estimates made by the owners of the tasks or by experts"
-    }
+    },
+    "LO": "Explain the difference between two estimation techniques: the metrics-based technique and the expert-based technique"
   },
   {
     "question": "As a test manager you are responsible for testing the following parts of requirements:\n\n• R1 - Process anomalies\n• R2 - Synchronization\n• R3 - Approval\n• R4 - Problem solving\n• R5 - Financial data\n• R6 - Diagram data\n• R7 - Changes to the user profile\n\nWhich one of the following options structures the test execution schedule according to the requirement dependencies?\n\nNotation: Logical requirement dependencies (A -> B means, that B depends on A):",
@@ -519,7 +555,8 @@
       "3": "Is correct. The tests are specified in a sequence that takes the dependencies into account",
       "4": "Is not correct. R2 is dependent on R3, so R3 should be tested before R2"
     },
-    "image": "question37"
+    "image": "question37",
+    "LO": "Apply knowledge of prioritization, and technical and logical dependencies, to schedule test execution for a given set of test cases"
   },
   {
     "question": "You are testing a new version of software for a coffee machine. The machine can prepare different types of coffee based on four categories. i.e., coffee size, sugar, milk, and syrup. The criteria are as follows:\n\n• Coffee size (small, medium, large)\n• Sugar (none, 1 unit, 2 units, 3 units, 4 units)\n• Milk (yes or no)\n• Coffee flavor syrup (no syrup, caramel, hazelnut, vanilla)\n\nNow you are writing a defect report with the following information:\n\n• Title: Low coffee temperature.\n• Short summary: When you select coffee with milk, the time for preparing coffee is too long and the temperature of the beverage is too low (less than 40 °C).\n• Expected result: The temperature of coffee should be standard (about 75 °C).\n• Degree of risk: Medium\n• Priority: Normal\n\nWhat valuable information was omitted in the above defect report?",
@@ -533,7 +570,8 @@
       "2": "Is correct. When testing different versions of software, identifying information is necessary",
       "3": "Is not correct. You are just writing the defect report; hence, the status is automatically open",
       "4": "Is not correct. This information is useful for the tester but does not need to be included in the defect report"
-    }
+    },
+    "LO": "Write a defect report, covering a defect found during testing"
   },
   {
     "question": "Which one of the following is MOST likely to be a benefit of test execution tools?",
@@ -547,7 +585,8 @@
       "2": "Is not correct. This is done by configuration management tools",
       "3": "Is not correct. This needs specialized tools",
       "4": "Is correct. Reduction in repetitive manual work (e.g., running regression tests, environment set up/tear down tasks, re-entering the same test data, and checking against coding standards), thus saving time"
-    }
+    },
+    "LO": "Identify benefits and risks of test automation"
   },
   {
     "question": "Which one of the following test tools is mostly suitable for developers rather than testers?",
@@ -561,6 +600,7 @@
       "2": "Is not correct. Configuration management tools are not particularly suitable for developers",
       "3": "Is correct. Static analysis tools are especially suitable for developers",
       "4": "Is not correct. Performance testing tools are not better suited for developers than for testers"
-    }
+    },
+    "LO": "Classify test tools according to their purpose and the test activities they support"
   }
 ]
