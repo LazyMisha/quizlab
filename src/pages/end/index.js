@@ -17,9 +17,9 @@ class EndPage {
         this.goHomeBtn = document.getElementById('go-home-btn');
 
         if (this.answers.length) {
-            const percentage = this.score / this.answers.length * 100;
+            const percentage = this.score > 0 ? Math.floor(this.score / this.answers.length * 100) : 0;
             const passMark = percentage >= 65 ? '\u2705' : '\u274C';
-            this.scores.innerText = `Correct answers: ${this.score} out of ${this.answers.length} (${percentage}%) - ${passMark}`;
+            this.scores.innerText = `Correct answers: ${this.score} out of ${this.answers.length}\n${percentage}% - ${passMark}`;
         }
 
         this.questionsList.innerHTML = this.answers.map((answer) => {

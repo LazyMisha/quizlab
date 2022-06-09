@@ -13,6 +13,7 @@ class IstqbGamePage {
 
     constructor(observer) {
         localStorage.removeItem('answers');
+        localStorage.removeItem('score');
 
         this.observer = observer;
         this.availableQuestions = [...questions];
