@@ -14,8 +14,19 @@ const routes = {
     '/end': getEndPage,
 };
 
+const getBasePath = () => {
+    const pathParts = window.location.pathname.split('/').filter(Boolean);
+    return pathParts[0] === 'quizlab' ? '/quizlab' : '';
+};
+
+const getRoutePath = () => {
+    const basePath = getBasePath();
+    const path = window.location.pathname.replace(basePath, '') || '/';
+    return path.startsWith('/') ? path : `/${path}`;
+};
+
 const handleLocation = () => {
-    const path = window.location.pathname;
+    const path = getRoutePath();
     const page = routes[path] || routes[404];
     if (typeof page === 'function') {
         page(observer).render();
@@ -25,7 +36,7 @@ const handleLocation = () => {
 };
 
 const routeByPath = (path) => {
-    window.history.pushState({}, '', path);
+    window.history.pushState({}, '', `${getBasePath()}${path}`);
     handleLocation();
     document.getElementById('main-page').scrollTop = 0;
 };
